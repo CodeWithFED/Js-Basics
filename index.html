@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script type="module" src="/main.js"></script>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -9,6 +8,23 @@
     <title>Vite App</title>
   </head>
   <body>
+    <nav class="navbar">
+      <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+      <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+        <span class="material-icons">
+          <img src="menu.svg" alt="" />
+        </span>
+      </button>
+      <h1 class="navbar-title">Awards</h1>
+      <nav class="navbar-menu">
+        <button type="button">Skills</button>
+        <button type="button" class="active">Awards</button>
+        <button type="button">Projects</button>
+      </nav>
+    </nav>
+    <!-- -->
+
     <div class="container">
       <h1>Heading</h1>
       <p>
@@ -198,5 +214,6 @@
         delectus!
       </p>
     </div>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
