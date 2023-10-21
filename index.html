@@ -9,16 +9,16 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+      <div class="navbar-overlay"></div>
 
-      <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+      <button id="menu-btn" type="button" class="navbar-burger">
         <span class="material-icons">
           <img src="menu.svg" alt="menu" />
         </span>
       </button>
       <h1 class="navbar-title">Awards</h1>
       <nav class="navbar-menu">
-        <a href="#">Awards</a>
+        <a onclick="selected" href="#">Awards</a>
         <a href="#">Blog</a>
         <a href="#">Projects</a>
         <a href="#">Skills</a>

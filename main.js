@@ -1,1 +1,4 @@
-const toggleMenuOpen = () => document.body.classList.toggle("open");
+const menu = document.getElementById('menu-btn')
+menu.addEventListener('click',() => {
+    document.body.classList = 'open'; 
+})
